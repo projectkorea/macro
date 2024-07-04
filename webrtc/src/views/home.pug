@@ -1,0 +1,27 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title WebRTC
+        link(rel="stylesheet", href="https://unpkg.com/mvp.css")
+        script(defer src='/public/js/app.js')
+    body
+        header
+            h1 Let's run Webrtc by web sockets
+        main
+            section
+                form#nick
+                    input(type="text", placeholder="닉네임을 입력하세요.", required)
+                    button 저장
+                form#msg
+                    input(type="text", placeholder="메세지를 입력하세요.", required)
+                    button 보내기
+                ul
+            section
+                h2 webRTC API 3요소
+                ul
+                    li MediaStream, GetUserMedia
+                    li RTCPeerConnection
+                    li RTCDataChannel
